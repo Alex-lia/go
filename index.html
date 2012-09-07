@@ -1,0 +1,63 @@
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="css/main.css" />
+      <link rel="stylesheet" type="text/css" href="css/player.css" />
+      
+      <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+      <script type="text/javascript" src="js/eidogo.js"></script>
+      <script type="text/javascript" src="js/util.js"></script>
+      <script type="text/javascript" src="js/board.js"></script>
+      <script type="text/javascript" src="js/rules.js"></script>
+      <script type="text/javascript" src="js/game.js"></script>      
+      <script type="text/javascript" src="js/lang.js"></script>
+      
+      <script type="text/javascript">
+          
+          
+          $(function(){
+              
+            var size = 19;
+            
+            var cfg = {};
+
+            var game = new eidogo.Game(cfg);
+
+/*
+  
+           
+//                  var msg = "at ";
+//                  msg += $.currentColor == $.goboard.WHITE ? 1 : 2;
+                 // msg += $.goboard.WHITE +", "+ sx + ", " + ((event.pageX - offset.left-5)) + ", " + ((width-5*2)/(size-1)) + ", " + ((event.pageX - offset.left) / ((width-5*2)/(size-1)));
+                //alert(event);
+//                  $("#log").append("<div>" + msg + "</div>");
+            });*/
+          });
+
+      </script>
+  </head>
+  <body>
+      <h1>GO BOARD</h1>
+    <div class="eidogo-player-auto">
+        <div class="eidogo-player theme-compact">
+            <div class="board-container"></div>
+        </div>
+    </div>
+    <div id="game-info">
+            <div id="player-white">
+                <div class="name"></div>
+                <div class="captures"></div>
+                <div class="time"></div>
+            </div>
+            <div id="player-black">
+                <div class="name"></div>
+                <div class="captures"></div>              
+                <div class="time"></div>              
+            </div>
+            <div class="pass">Pass</div>
+            <div class="resign">Resign</div>              
+        </div>      
+       <div>
+       <div id="log"></div>
+       </div>
+  </body>
+</html>

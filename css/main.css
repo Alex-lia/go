@@ -1,0 +1,43 @@
+/* 
+    Document   : main
+    Created on : Feb 1, 2012, 11:06:52 AM
+    Author     : alex
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#game-info {
+    width: 400px;
+    border: 1px solid #000;
+    float: left;
+    margin: 15px;
+}
+#player-white {
+    background-color: #fff;
+    color: #000;
+    float: right;
+    border-bottom: 1px solid #000;
+}
+
+#player-black {
+    background-color: #000;
+    color: #fff;
+}
+
+#player-white, #player-black {
+    width: 180px;
+    padding: 10px;
+}
+.pass, .resign {
+    margin: 15px;
+    padding: 3px;
+    text-align: center;
+}
+
+.pass, .resign {
+    border: 1px solid #000;
+}
+.pass:hover, .resign:hover {
+    background-color: #000;
+    color: #fff;
+    cursor:pointer;
+}
